@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import './index.scss'
 // PAges
 import Home from './pages/Home'
+import AddEmployee from './pages/AddEmployee'
 // Components
 import Header from './components/Header'
 
@@ -15,6 +16,7 @@ ReactDOM.render(
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/addEmployee" element={<AddEmployee />} />
             </Routes>
         </Router>
     </React.StrictMode>,
