@@ -2,22 +2,13 @@ import './Home.scss'
 
 function Home() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src="/logo.svg" className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/pages/Hompe/index.js</code> and save to
-                    reload.
+        <div className="home">
+            <div className="home__content">
+                <img src="/logo.svg" className="home__logo" alt="logo" />
+                <p className="home__text">
+                    Welcome to <span className="home__text-hrnet">HRnet</span>
                 </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            </div>
         </div>
     )
 }
