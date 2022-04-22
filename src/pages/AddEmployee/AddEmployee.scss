@@ -1,63 +1,10 @@
 @use '../../utils/sass/colors' as *;
 
 .employee {
+    position: relative;
     display: flex;
-    background-color: rgb(254, 255, 250);
+    background-color: rgba($primary-color, 0.4);
     height: 100%;
     padding: 20px;
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: rgba($primary-color, 0.5);
-        border-radius: 10px;
-        box-shadow: 0 5px 10px rgba($black, 0.5);
-        
-        & fieldset {
-            border: none;
-            width: 100%;
-        }
-
-        & legend {
-            color: rgba($black, 0.8);
-            font-weight: bold;
-        }
-        
-        & input, select {
-            width: 100%;
-            height: 40px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 1rem;
-            margin-bottom: 10px;
-        }
-
-        & input {
-            padding-left: 10px;
-            &:focus {
-                outline-color: $tertiary-color;
-            }
-        }
-
-        &-button {
-            width: 30%;
-            height: 40px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgb(254, 255, 250);
-            color: $black;
-
-            &:hover {
-                border: 1px solid $secondary-color;
-                cursor: pointer;
-            }
-        } 
-    }
 }
 
