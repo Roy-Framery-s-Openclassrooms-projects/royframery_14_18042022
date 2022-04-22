@@ -6,8 +6,10 @@
     height: 100%;
     background-color: #282c34;
     background: no-repeat center/cover url('../../../public/background-home.jpg');
-
+    
     &__content {
+        position: relative;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,11 +17,12 @@
         height: 400px;
         width: 320px;
         padding: 18px;
-        background-color: rgba(0, 0, 0, 0.3); 
         font-size: 28px;
         color: white;
-        backdrop-filter: blur(5px);
-        border-radius: 10px;     
+        border-radius: 10px;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.3); 
     }
     &__logo {
         height: 260px;
@@ -36,10 +39,10 @@
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
