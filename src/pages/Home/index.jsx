@@ -1,6 +1,7 @@
 import './Home.scss'
 
 function Home() {
+    document.title = 'HRnet - Home'
     return (
         <main className="home">
             <div className="home__content">

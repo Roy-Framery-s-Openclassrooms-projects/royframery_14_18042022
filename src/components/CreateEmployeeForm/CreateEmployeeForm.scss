@@ -9,7 +9,7 @@
     width: 100%;
     margin: auto;
     padding: 20px;
-    background-color: rgba($white, 0.6);
+    background-color: rgba($white, 0.3);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba($black, 0.5);
 
@@ -44,6 +44,14 @@
         padding-left: 10px;
         &:focus {
             outline-color: $tertiary-color;
+        }
+    }
+
+    & select {
+        padding-left: 5px;
+        & option {
+            font-size: 16px;
+            padding: 3px;
         }
     }
 

@@ -14,11 +14,11 @@ const Home = () => {
                     <p className="header__brand-text">WEALTH HEALTH</p>
                 </Link>
                 <ul className="header__links">
-                    <Link className="header__link" to="/addEmployee">
-                        <li>Add Employee</li>
+                    <Link className="header__link" to="/createEmployee">
+                        <li>Create Employee</li>
                     </Link>
                     <Link className="header__link" to="/employees">
-                        <li>Current Employees</li>
+                        <li>Employees List</li>
                     </Link>
                 </ul>
             </nav>
