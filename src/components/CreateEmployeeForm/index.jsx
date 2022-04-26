@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import DatePicker from 'react-datepicker'
 import { useDispatch } from 'react-redux'
-// action
+// actions
 import { createEmployee } from '../../features/employee'
+import { showModal } from '../../features/modal'
 // Components
 import Select from '../Select'
 // Selects options
@@ -41,6 +42,7 @@ const CreateEmployeeForm = () => {
             zipCode: zipCode.value,
         }
         dispatch(createEmployee(newEmployee))
+        dispatch(showModal())
     }
 
     const resetInputs = () => {

@@ -1,21 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    employees: [],
+    showModal: false,
 }
 
 // Slice
 const { actions, reducer } = createSlice({
-    name: 'employee',
+    name: 'modal',
     initialState: initialState,
     reducers: {
-        createEmployee: (draft, action) => {
-            draft.employees.push(action.payload)
+        showModal: (draft) => {
+            draft.showModal = !draft.showModal
             return
         },
     },
 })
 
-export const createEmployee = actions.createEmployee
+export const showModal = actions.showModal
 
 export default reducer

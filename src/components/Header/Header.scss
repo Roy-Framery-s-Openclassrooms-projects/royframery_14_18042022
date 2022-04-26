@@ -2,10 +2,8 @@
 @use '../../utils/sass/breakpoints' as *;
 
 .header {
-    position: relative;
     display: flex;
     background-color: rgb(254, 255, 250);
-    z-index: 1;
     @include media-query(medium) {
         box-shadow: 0 5px 10px rgba($black, 0.3);
     }
