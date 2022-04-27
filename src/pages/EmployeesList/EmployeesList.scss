@@ -1,0 +1,8 @@
+@use '../../utils/sass/colors' as *;
+
+.employeesList {
+    display: flex;
+    background-color: rgba($primary-color, 0.4);
+    padding: 20px;
+    height: 100%;
+}

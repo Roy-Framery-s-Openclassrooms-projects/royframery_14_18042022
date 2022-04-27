@@ -10,6 +10,7 @@ import './index.scss'
 // PAges
 import Home from './pages/Home'
 import CreateEmployee from './pages/CreateEmployee'
+import EmployeesList from './pages/EmployeesList'
 // Components
 import Header from './components/Header'
 
@@ -24,6 +25,7 @@ ReactDOM.render(
                         path="/createEmployee"
                         element={<CreateEmployee />}
                     />
+                    <Route path="/employees" element={<EmployeesList />} />
                 </Routes>
             </Router>
         </Provider>
