@@ -1,11 +1,13 @@
+// Components
 import EmployeeTable from '../../components/EmployeesTable'
+import { MainTitlePage } from '../../components/MainTitlePage'
 // CSS
 import './EmployeesList.scss'
 
 const EmployeesList = () => {
     return (
         <main className="employeesList">
-            <h1 className="employeesList__title sr-only">Employees list</h1>
+            <MainTitlePage text="Employees list" />
             <EmployeeTable />
         </main>
     )

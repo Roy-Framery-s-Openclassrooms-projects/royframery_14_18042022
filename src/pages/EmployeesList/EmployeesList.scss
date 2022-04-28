@@ -2,7 +2,8 @@
 
 .employeesList {
     display: flex;
-    background-color: rgba($primary-color, 0.4);
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     height: 100%;
 }

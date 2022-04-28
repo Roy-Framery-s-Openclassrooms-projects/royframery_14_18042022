@@ -1,4 +1,5 @@
 @use './utils/sass/resets';
+@use './utils/sass/colors' as *;
 
 @font-face {
     font-family: "copperplate gothic";
@@ -12,12 +13,10 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: rgba($primary-color, 0.4);
 }
-#root,
-body,
-html {
+#root {
     margin: auto;
-    height: 100vh;
 }
 
 code {

@@ -1,0 +1,19 @@
+@use '../../utils/sass/colors' as *;
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__title {
+        color: rgba($black, 0.8);
+        font-weight: bold;
+    }
+
+    &__input {
+        height: 30px;
+        border: none;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+}
