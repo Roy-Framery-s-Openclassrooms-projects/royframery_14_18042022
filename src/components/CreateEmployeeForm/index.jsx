@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import { useDispatch } from 'react-redux'
+// modal Package
+import { Modal } from '@royframery_openclassrooms/modal'
+import '@royframery_openclassrooms/modal/dist/index.css'
 // actions
 import { createEmployee } from '../../features/employee'
 import { showModal } from '../../features/modal'
@@ -10,16 +14,21 @@ import Select from '../Select'
 import { states, departments } from '../../utils/optionsSelect'
 // CSS
 import './CreateEmployeeForm.scss'
-import 'react-datepicker/dist/react-datepicker.css'
 
+/**
+ * @description Component that show the create employee form
+ * @returns { HTMLElement }
+ */
 const CreateEmployeeForm = () => {
     const [startDate, setStartDate] = useState()
     const [birthDate, setBirthDate] = useState()
     const dispatch = useDispatch()
 
-    const saveEmployee = (event) => {
-        event.preventDefault()
-
+    /**
+     * @description Function that save the created employee in the state
+     * @returns { boolean }
+     */
+    const saveEmployee = () => {
         const firstName = document.querySelector('.firstName')
         const lastName = document.querySelector('.lastName')
         const birthDate = document.querySelector('.birthDate')
@@ -43,8 +52,13 @@ const CreateEmployeeForm = () => {
         }
         dispatch(createEmployee(newEmployee))
         dispatch(showModal())
+
+        return true
     }
 
+    /**
+     * @description Function that reset date picker
+     */
     const resetInputs = () => {
         setStartDate('')
         setBirthDate('')
@@ -149,12 +163,12 @@ const CreateEmployeeForm = () => {
                 />
             </fieldset>
             <div className="form__buttons">
-                <button
-                    className="form__button form__button-submit"
-                    onClick={saveEmployee}
-                >
-                    Save
-                </button>
+                <Modal
+                    buttonText="Save"
+                    content="Employee Created !"
+                    BeforeOpenModal={saveEmployee}
+                />
+
                 <button
                     className="form__button form__button-reset"
                     type="reset"

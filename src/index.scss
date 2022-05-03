@@ -15,6 +15,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: rgba($primary-color, 0.4);
 }
+body, html, #root {
+    height: 100%;
+}
+
 #root {
     margin: auto;
 }

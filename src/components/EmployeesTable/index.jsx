@@ -14,10 +14,20 @@ import GlobalFilter from '../GlobalFilter'
 // CSS
 import './EmployeesTable.scss'
 
-const capitalizeKey = (key) => {
-    return key.charAt(0).toUpperCase() + key.slice(1)
+/**
+ *
+ * @param { string } word - Word to capitalized
+ * @returns { string }
+ */
+const capitalizeKey = (word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1)
 }
 
+/**
+ * @description function that will format a word
+ * @param { string } key
+ * @returns { string }
+ */
 const formatHeadName = (key) => {
     switch (key) {
         case 'firstName':
@@ -35,16 +45,23 @@ const formatHeadName = (key) => {
     }
 }
 
+/**
+ * @description Component that show a table of employees
+ * @returns { HTMLElement }
+ */
 const EmployeeTable = () => {
     const employees = useSelector(selectEmployees)
     const [employeesState, setEmployeesData] = useState([])
+    // Check is the array of employees is empty
     const isEmployees = employeesState.length === 0
     const isEven = (index) => index % 2 === 0
 
+    // To get the data of employees
     const employeesData = useMemo(() => [...employeesState], [employeesState])
 
+    // To get the <th> of the table
     const employeeColumns = useMemo(() => {
-        if (employeesState.length > 0) {
+        if (!isEmployees) {
             return Object.keys(employeesState[0]).map((key) => {
                 return { Header: formatHeadName(key), accessor: key }
             })
@@ -88,7 +105,7 @@ const EmployeeTable = () => {
                 },
             ]
         }
-    }, [employeesState])
+    }, [employeesState, isEmployees])
 
     const tableInstance = useTable(
         {
@@ -126,7 +143,6 @@ const EmployeeTable = () => {
         state,
     } = tableInstance
 
-    console.log(page)
     return (
         <div className="table">
             <div className="dataChange">
@@ -145,8 +161,8 @@ const EmployeeTable = () => {
                     Use State Data
                 </button>
             </div>
-            <div className="table__header">
-                <label className="table__header-select">
+            <div className="table__top">
+                <label className="table__top-select">
                     Show&nbsp;
                     <select
                         value={pageSize}
@@ -234,8 +250,8 @@ const EmployeeTable = () => {
                     )}
                 </tbody>
             </table>
-            <div className="table__footer">
-                <div className="table__footer-entries">
+            <div className="table__bottom">
+                <div className="table__bottom-entries">
                     <p {...getTableBodyProps}>
                         Showing
                         {page.length > 0
@@ -250,7 +266,7 @@ const EmployeeTable = () => {
                         entries
                     </p>
                 </div>
-                <div className="table__footer-pagination">
+                <div className="table__bottom-pagination">
                     <button
                         onClick={() => gotoPage(0)}
                         disabled={!canPreviousPage}
@@ -274,7 +290,7 @@ const EmployeeTable = () => {
                     </button>
                     <span>
                         <strong
-                            className="table__footer-pagination-text"
+                            className="table__bottom-pagination-text"
                             {...getTableBodyProps}
                         >
                             {page.length === 0

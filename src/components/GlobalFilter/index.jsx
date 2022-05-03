@@ -3,6 +3,11 @@ import { useAsyncDebounce } from 'react-table'
 // CSS
 import './GlobalFilter.scss'
 
+/**
+ * @description Component that show a search input for the employees table
+ * @param {*} param0
+ * @returns {HTMLElement }
+ */
 const GlobalFilter = ({
     preGlobalFilteredRows,
     globalFilter,

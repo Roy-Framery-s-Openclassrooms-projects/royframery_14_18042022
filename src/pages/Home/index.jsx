@@ -1,5 +1,9 @@
 import './Home.scss'
 
+/**
+ * @description Component that show the Home page
+ * @returns { HTMLElement }
+ */
 function Home() {
     document.title = 'HRnet - Home'
     return (

@@ -9,7 +9,7 @@
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba($black, 0.5);
 
-    &__header {
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -48,7 +48,7 @@
         }
     }
 
-    &__footer {
+    &__bottom {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
