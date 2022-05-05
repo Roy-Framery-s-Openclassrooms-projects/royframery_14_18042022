@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+![Create react app](https://img.shields.io/badge/build_with-create_react_app-09D3AC?style=for-the-badge&logo=Create-React-App)
+![NodeJs](https://img.shields.io/badge/Node.js-17.0.2-339933?style=for-the-badge&logo=Node.js)
+![Sass](https://img.shields.io/badge/Sass-1.50.1-CC6699?style=for-the-badge&logo=Sass)
+![Redux](https://img.shields.io/badge/React_Redux-8.0.1-764ABC?style=for-the-badge&logo=Redux)
+# HRnet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![HRnet](public/readMe/logo.svg)
 
-## Available Scripts
+_**HRnet**_ is an internal web application of the __Wealth Health__ company. The goal here was to move from a [jQuery application](https://github.com/Roy-Framery-s-Openclassrooms-projects/oldHRnet) to a React application. Four jQuery plugins was present in the initial application : 
+- [jQuery DateTimePicker](https://github.com/xdan/datetimepicker)
+- [jQuery Select](https://github.com/jquery/jquery-ui/blob/main/ui/widgets/selectmenu.js)
+- [jQuery DataTables](https://github.com/DataTables/DataTables)
+- [jQuery Modal](https://github.com/kylefox/jquery-modal)
 
-In the project directory, you can run:
+All of them had to be replaced by a __React__ component :
+- [react-table](https://www.npmjs.com/package/react-table)
+- [react-datepicker](https://www.npmjs.com/package/react-datepicker)
+- [select](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_14_18042022/blob/dev/src/components/Select/index.jsx) : For the select, I created a basic react component which could be improve in the future;
+- [@royframery_openclassrooms/modal](https://www.npmjs.com/package/@royframery_openclassrooms/modal) : We created our own modal library which is at her first version.
 
-### `npm start`
 
-Runs the app in the development mode.\
+
+## Prerequisites 🚨
+- [NodeJs (version 17.0.2)](https://nodejs.org/en/)
+
+> If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
+
+
+---
+
+## Installation 💽
+
+`Clone project`
+ ```bash
+ git clone https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_14_18042022.git
+ ```
+
+
+---
+
+## Usage 💻
+
+`Install dependencies`
+```bash
+npm i
+```
+
+`Launch front server`
+```bash
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Author info
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🧑‍🎓 Roy Framery
+- [LinkedIn](https://www.linkedin.com/in/roy-framery/)
