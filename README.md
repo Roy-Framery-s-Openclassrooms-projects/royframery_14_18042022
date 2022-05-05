@@ -15,8 +15,8 @@ _**HRnet**_ is an internal web application of the __Wealth Health__ company. The
 All of them had to be replaced by a __React__ component :
 - [react-table](https://www.npmjs.com/package/react-table)
 - [react-datepicker](https://www.npmjs.com/package/react-datepicker)
-- [select](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_14_18042022/blob/dev/src/components/Select/index.jsx) : For the select, I created a basic react component which could be improve in the future;
-- [@royframery_openclassrooms/modal](https://www.npmjs.com/package/@royframery_openclassrooms/modal) : We created our own modal library which is at her first version.
+- [select](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_14_18042022/blob/dev/src/components/Select/index.jsx) : For the select, we created a basic react component which could be improve in the future;
+- [@royframery_openclassrooms/modal](https://www.npmjs.com/package/@royframery_openclassrooms/modal) : We created our own modal library which is at its first version.
 
 
 
