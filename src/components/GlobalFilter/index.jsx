@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useAsyncDebounce } from 'react-table'
+import PropTypes from 'prop-types'
 // CSS
 import './GlobalFilter.scss'
 
 /**
- * @description Component that show a search input for the employees table
- * @param {*} param0
- * @returns {HTMLElement }
+ * @description Component that show a input search for the employees table
+ * @returns { HTMLElement }
  */
 const GlobalFilter = ({
     preGlobalFilteredRows,
@@ -36,6 +36,12 @@ const GlobalFilter = ({
             />
         </div>
     )
+}
+
+GlobalFilter.propTypes = {
+    preGlobalFilteredRows: PropTypes.array,
+    globalFilter: PropTypes.string,
+    setGlobalFilter: PropTypes.func,
 }
 
 export default GlobalFilter

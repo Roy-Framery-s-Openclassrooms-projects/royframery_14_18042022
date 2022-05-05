@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom'
 // CSS
 import './Header.scss'
+
+/**
+ * @description Component that show the header
+ * @returns { HTMLElement }
+ */
 const Home = () => {
     return (
         <header className="header">
@@ -11,7 +16,10 @@ const Home = () => {
                         src="/logo.svg"
                         alt="logo"
                     />
-                    <p className="header__brand-text">WEALTH HEALTH</p>
+                    <p className="header__brand-text">
+                        WEALTH HEALTH -{' '}
+                        <span className="header__brand-text-hrnet">HRnet</span>
+                    </p>
                 </Link>
                 <ul className="header__links">
                     <Link className="header__link" to="/createEmployee">

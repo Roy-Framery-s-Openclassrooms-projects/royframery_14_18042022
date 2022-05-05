@@ -1,14 +1,10 @@
 @use '../../utils/sass/colors' as *;
-@use '../../utils/sass/breakpoints' as *;
 
 .employee {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-
-    @include media-query(medium) {
-        height: 100%;
-    }
+    height: 100%;
 }
 

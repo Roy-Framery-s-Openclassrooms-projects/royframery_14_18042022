@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types'
+
+/**
+ * @description Component that show an input select
+ * @returns { HTMLElement }
+ */
 const Select = ({
     label,
     htmlFor,
@@ -28,8 +34,13 @@ const Select = ({
     )
 }
 
-Select.defaultProps = {
-    hideLabel: true,
+Select.propTypes = {
+    label: PropTypes.string,
+    htmlFor: PropTypes.string,
+    defaultValue: PropTypes.string,
+    options: PropTypes.array,
+    hideLabel: PropTypes.bool,
+    className: PropTypes.string,
 }
 
 export default Select

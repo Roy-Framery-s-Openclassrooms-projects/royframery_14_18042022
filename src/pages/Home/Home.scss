@@ -4,11 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background: no-repeat center/cover url('../../../public/background-home.jpg');
     
     &__content {
-        position: relative;
-        z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,14 +16,11 @@
         font-size: 28px;
         color: white;
         border-radius: 10px;
-        -webkit-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
         background-color: rgba(0, 0, 0, 0.3); 
     }
     &__logo {
         height: 260px;
-        pointer-events: none;
-        animation: logo-spin infinite 20s linear;
+        width: 260px;
     }
 
     &__text {
