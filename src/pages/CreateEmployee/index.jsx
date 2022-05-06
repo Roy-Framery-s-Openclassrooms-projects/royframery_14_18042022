@@ -1,5 +1,5 @@
 // Components
-import AddEmployeeForm from '../../components/CreateEmployeeForm'
+import CreateEmployeeForm from '../../components/CreateEmployeeForm'
 import { MainTitlePage } from '../../components/MainTitlePage'
 // CSS
 import './CreateEmployee.scss'
@@ -14,7 +14,7 @@ const CreateEmployee = () => {
     return (
         <main className="employee">
             <MainTitlePage text="Create employee" />
-            <AddEmployeeForm />
+            <CreateEmployeeForm />
         </main>
     )
 }
