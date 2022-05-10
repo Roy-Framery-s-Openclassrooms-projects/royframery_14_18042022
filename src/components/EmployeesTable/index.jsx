@@ -256,13 +256,13 @@ const EmployeeTable = () => {
                         Showing
                         {page.length > 0
                             ? ' ' +
-                              (page[0].index + 1) +
+                              (page.length * state.pageIndex + 1) +
                               ' to ' +
-                              (page[page.length - 1].index + 1) +
+                              page.length * (state.pageIndex + 1) +
                               ' of ' +
                               employeesState.length +
                               ' '
-                            : ' 0 to 0 of 0 '}
+                            : ' 0 '}
                         entries
                     </p>
                 </div>
